@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container markdown-body">
+
+        <h1><a href="https://logiquecode.github.io/help/">help</a></h1>
+
+        <h1 id="logiquecode-zoom-credentials-help-page">1. Set Up Google Cloud Project and Service Account</h1>
+
+        <hr />
+
+        <ol>
+            <!-- 1 -->
+            <li>
+                <p>Go to <a href="https://console.cloud.google.com/">Google Cloud Console.</a></p>
+                <img src="./img/oneshot.png" alt="alt text" />
+            </li>
+            <!-- 2 -->
+            <li>
+                <p><strong>Create a new project or select an existing project.</strong>.
+                    <img src="./img/2ndshot.png" alt="alt text" />
+                    <img src="./img/3rdshot.png" alt="alt text" />
+                </p>
+            </li>
+            <!-- 3 -->
+            <li>
+                <p>Enable the Google Drive API for your project:
+                    <br><br>
+                    &nbsp;&nbsp;I. &nbsp; Go to the <a href="https://console.cloud.google.com/apis/library">API
+                        Library.</a>
+                    <img src="./img/4thshot.png" alt="alt text" />
+                    <br><br>
+                    &nbsp;&nbsp;II. &nbsp; Search for "Google Drive API" and enable it.
+                    <img src="./img/5thshot.png" alt="alt text" />
+                    <img src="./img/6thshot.png" alt="alt text" />
+                </p>
+            </li>
+            <!-- 4 -->
+            <li>Create a service account:
+                <br><br>
+                &nbsp;&nbsp;I. &nbsp; Go to <a href="https://console.cloud.google.com/apis/library">IAM & Admin </a>><a
+                    href="">Service Accounts</a>.
+                <br><br>
+                &nbsp;&nbsp;II. &nbsp; Click "Create Service Account".
+                <img src="./img/7thshot.png" alt="alt text" />
+                <br><br>
+                &nbsp;&nbsp;II. &nbsp; Fill in the necessary details and click "Create".</a>
+
+            </li>
+            <br><br>
+            <!-- 5 -->
+            <li>After creating the service account, click "Select a role" and add roles like "Editor" or "Owner".
+                <img src="./img/8thshot.png" alt="alt text" />
+            </li>
+            <br>
+            <!-- 6 -->
+            <li>Create a key for the service account:
+                <br><br>
+                &nbsp;&nbsp;I. &nbsp; Go to <strong>IAM & Admin > Credentials. </strong>
+                <br><br>
+                &nbsp;&nbsp;II. &nbsp; Click "Email" or Action > Manage Keys.
+                <img src="./img/9thshot.png" alt="alt text" />
+                <br><br>
+                &nbsp;&nbsp;III. &nbsp; Click <strong> "Key" > "Add Key" > "Create new key".</strong>
+                <img src="./img/10thshot.png" alt="alt text" />
+                <img src="./img/11thshot.png" alt="alt text" />
+                <img src="./img/12thshot.png" alt="alt text" />
+                <br><br>
+                &nbsp;&nbsp;IV. &nbsp; Choose JSON as the key type and click "Create".
+                <br><br>
+                &nbsp;&nbsp;V. &nbsp; A JSON file will be downloaded to your computer. This is your service account key
+                file.
+                <br><br>
+
+            </li>
+
+            <br><br><br><br>
+            <h1 id="logiquecode-zoom-credentials-help-page">2. Set Up Google Drive Account</h1>
+            <hr>
+
+            <!-- 7 -->
+            <li> Create a Folder in Google Drive
+                <br><br>
+                &nbsp;&nbsp;I. &nbsp; Go to <a href="https://drive.google.com/">Google Drive.</a>
+                <br><br>
+                &nbsp;&nbsp;II. &nbsp; Click on <strong> "New" > "Folder"</strong>.
+                <br><br>
+                &nbsp;&nbsp;III. &nbsp; Name your folder and click "Create".
+                <!-- <img src="./6.%20image.png" alt="alt text" />
+                <img src="/help/scope1.png" alt="alt text" />
+                <img src="/help/scope2.png" alt="alt text" />
+                <img src="/help/scope3.png" alt="alt text" />
+                <img src="/help/scope4.png" alt="alt text" />
+                <img src="/help/scope5.png" alt="alt text" /> -->
+            </li>
+            <!-- 8 -->
+            <li>Click on Share the Folder with the Service Account.
+                    <br><br>
+                    &nbsp;&nbsp;I. &nbsp; Right-click on the newly created folder and select "Share".
+                    <br><br>
+                    &nbsp;&nbsp;II. &nbsp; In the "Share with people and groups" dialog, enter the email address of your
+                    service account. This email address can be found in the JSON key file you downloaded from the Google
+                    Cloud Console, typically in the format <strong>your-service-account@your-project.iam.gserviceaccount.com</strong>.
+                    <br><br>
+                    &nbsp;&nbsp;III. &nbsp; Set the access level to "Editor" to allow the service account to upload
+                    files.
+                    <br><br>
+                    &nbsp;&nbsp;IV. &nbsp; Click "Send".
+            </li>
+
+            <li>Take Folder ID from URL.
+                <br><br>
+                &nbsp;&nbsp;I. &nbsp; <strong>https://drive.google.com/drive/folders/1jMu9SbjFRstscciOYGe4qdRUCh8n9uPj </strong> in this
+                URL <strong>1jMu9SbjFRstscciOYGe4qdRUCh8n9uPj</strong> is folder id.
+            </li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
